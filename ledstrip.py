@@ -16,7 +16,7 @@ WHITE=(85,85,85)
 class LedStrip:
     def __init__(self, pixels_count: int):
         self.pixels_count = pixels_count
-        self.pixels = neopixel.NeoPixel(board.D18, self.pixels_count, pixel_order=neopixel.RGB, auto_write=False)
+        self.pixels = neopixel.NeoPixel(board.D10, self.pixels_count, pixel_order=neopixel.RGB, auto_write=False)
         self.pixels.auto_write = False
         self.sleep_duration = 0.008
 
